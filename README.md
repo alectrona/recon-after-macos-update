@@ -13,7 +13,7 @@ Notes:
  - By default the macOS version tracking plist is `/Library/Preferences/com.alectrona.configuration.plist`
 
 ## Install a release .pkg
-The easiest method to use this is to head over to the releases section and download a pre-built .pkg that can be deployed to your fleet; its that simple.
+The easiest method to use this is to grab the [latest release](https://github.com/alectrona/post-macos-upgrade-recon/releases/latest) to download a pre-built .pkg that can be deployed to your fleet; its that simple.
 
 ## Build the project into a .pkg
 If you want to customize this project, you can change things like the identifier or anything else and build your own .pkg.
