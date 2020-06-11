@@ -41,6 +41,9 @@ fi
 /usr/bin/defaults write "$PWD/$daemonFileName" StandardOutPath '/var/log/post-macos-upgrade-recon.log'
 /usr/bin/defaults write "$PWD/$daemonFileName" StandardErrorPath '/var/log/post-macos-upgrade-recon.log'
 
+# Convert the plist to xml1 format to simplify reading
+/usr/bin/plutil -convert xml1 "$PWD/$daemonFileName"
+
 # Migrate postinstall script to temp build directory
 /bin/cp "$PWD/postinstall.sh" /private/tmp/post-macos-upgrade-recon/scripts/postinstall
 /bin/chmod +x /private/tmp/post-macos-upgrade-recon/scripts/postinstall
